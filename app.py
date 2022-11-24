@@ -4,6 +4,7 @@ import requests, random
 from dhooks import Webhook
 import ctypes
 
+webhookurl = input("Webhook URL: ")
 
 def groupfinder():
     id = random.randint(1000000, 1150000)
@@ -26,7 +27,7 @@ print("You are using Tom's Roblox Group Finder!")
 print("https://github.com/tomscripts/Roblox-Group-Finder")
 
 #your webhook
-hook = os.environ['webhook']
+hook = webhookurl
 #number of threads
 threads = 750
 
